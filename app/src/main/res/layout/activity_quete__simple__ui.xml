@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.wildcodeschool.qutesimpleui.Quete_Simple_UI">
+
+    <EditText
+        android:id="@+id/editText_last"
+        android:layout_width="304dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Leuchtmann"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <EditText
+        android:id="@+id/editText_first"
+        android:layout_width="304dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Pablo"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_last" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="399dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorAccent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="              Welcome to the Wild Code School"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="254dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="11dp"
+        android:text="Yes, I want to be a Wilder"
+        app:layout_constraintBottom_toTopOf="@+id/editText_last"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <Button
+        android:id="@+id/button_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:enabled="false"
+        android:text="ACCEPT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_first"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <TextView
+        android:id="@+id/TextViewCongrats"
+        android:layout_width="266dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/button_accept"
+        tools:layout_editor_absoluteX="53dp" />
+</android.support.constraint.ConstraintLayout>
